@@ -1,0 +1,54 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+.intro{
+    margin: 10px;
+}
+.wrap{
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    border: 1px solid #000;
+}
+h1{
+    text-align: center;
+}
+.wrap p{
+    background-color: #ccc;
+}
+
+
+.wrap0{
+    line-height: 400px;
+}
+
+.wrap1{
+    line-height: 400px;
+}
+.wrap1 p{
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.wrap2 p{
+    position: relative;
+    top: 200px;
+    transform: translateY(-50%);
+}
+
+.wrap3{
+    display: table;
+}
+.wrap3 p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wrap4{
+    display: flex;
+    align-items: center;
+    background-color: #ccc;
+}
+

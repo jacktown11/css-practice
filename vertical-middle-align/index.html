@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>垂直居中</title>
+</head>
+<body>
+    <p class="intro">
+        <strong>问题描述：</strong>现在有一个定高400px的容器，里面会显示一个文字段落，文字内容的多少是不确定的（即内容高度是不定的），如何让这些文字垂直居中？
+    </p>
+
+    <h1>单行文本的解决方案</h1>
+    <div class="wrap wrap0">
+        让line-height和height相等
+    </div>
+
+    <h1>行高 + inline-block</h1>
+    <div class="wrap wrap1">
+        <p>外层元素行高与元素高度相同，<br>内层元素display设置为inline-block，vetical-align设置为middle，并重写行高。</p>
+    </div>
+
+    <h1>相对定位 + transform</h1>
+    <div class="wrap wrap2">
+        <p>内层元素使用相对定位，top设为外层元素高度一半
+            <br>transform:translateY(-50%);</p>
+    </div>
+
+    <h1>table-cell</h1>
+    <div class="wrap wrap3">
+        <p>外层元素display设为table,<br>内层元素display设为table-cell，vertical-align设为middle;</p>
+    </div>
+
+    <h1>flex</h1>
+    <div class="wrap wrap4">
+        使用flex布局
+        <br>使用flex布局
+        <br>使用flex布局
+        <br>
+    </div>
+
+</body>
+</html>
